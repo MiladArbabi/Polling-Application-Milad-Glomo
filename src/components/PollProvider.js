@@ -225,7 +225,8 @@ class PollProvider extends Component {
       return (
         <PollContext.Provider
           value={{
-            game: this.state[Math.round(Math.random() * this.state.length)]
+            game: this.state[Math.round(Math.random() * this.state.length)],
+            voted: false
           }}
         >
           {this.props.children}
